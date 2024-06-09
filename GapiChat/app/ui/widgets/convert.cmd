@@ -1,0 +1,1 @@
+pyuic5 -o dropdownMenuUi.py dropdownMenu.ui

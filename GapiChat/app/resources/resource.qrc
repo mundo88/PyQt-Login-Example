@@ -1,0 +1,66 @@
+<RCC>
+  <qresource prefix="icon-color">
+    <file>icon-color/google.png</file>
+    <file>icon-color/icons8-windows-10-64.png</file>
+    <file>icon-color/active-48.png</file>
+    <file>icon-color/notification-48.png</file>
+    <file>icon-color/policy-48.png</file>
+    <file>icon-color/settings-48.png</file>
+    <file>icon-color/themes-48.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>icon/icon-todo-list-active.png</file>
+    <file>icon/ar-down.png</file>
+    <file>icon/arrow-right.png</file>
+    <file>icon/bug-24x24-black.png</file>
+    <file>icon/config-24x24-black.png</file>
+    <file>icon/checked-checkbox-50.png</file>
+    <file>icon/eye.png</file>
+    <file>icon/favorites-24x24-black.png</file>
+    <file>icon/hide.png</file>
+    <file>icon/home.png</file>
+    <file>icon/icon-call-video-disable.png</file>
+    <file>icon/icon-info.png</file>
+    <file>icon/checked-radio-button.png</file>
+    <file>icon/hover-radio-button.png</file>
+    <file>icon/unchecked-radio-button.png</file>
+    <file>icon/icon-info-disalbe.png</file>
+    <file>icon/icon-member-48.png</file>
+    <file>icon/icon-messages-active.png</file>
+    <file>icon/icon-notification-disable.png</file>
+    <file>icon/icon-phone.png</file>
+    <file>icon/icons8-enter-mac-key-50.png</file>
+    <file>icon/icons8-heart-64.png</file>
+    <file>icon/icons8-image-50.png</file>
+    <file>icon/icons8-member-active.png</file>
+    <file>icon/icons8-plus-64.png</file>
+    <file>icon/icons8-sun-48.png</file>
+    <file>icon/icons8-todo-list-48.png</file>
+    <file>icon/icons-chat.png</file>
+    <file>icon/icons-phone-disable.png</file>
+    <file>icon/icon-video-call.png</file>
+    <file>icon/unchecked-checkbox-50.png</file>
+    <file>icon/unchecked-checkbox-black-50.png</file>
+    <file>icon/unchecked-checkbox-hover-50.png</file>
+    <file>icon/user-24x24-black.png</file>
+  </qresource>
+  <qresource prefix="image">
+    <file>image/chat-density-comfy-contrast.svg</file>
+    <file>image/chat-density-comfy-dark.svg</file>
+    <file>image/chat-density-comfy-default.svg</file>
+    <file>image/chat-density-compact-contrast.svg</file>
+    <file>image/chat-density-compact-dark.svg</file>
+    <file>image/chat-density-compact-default.svg</file>
+    <file>image/dark-theme.svg</file>
+    <file>image/hight-contrast-theme.svg</file>
+    <file>image/light-theme.svg</file>
+    <file>image/dark.png</file>
+    <file>image/light.png</file>
+    <file>image/auth-apppng.png</file>
+    <file>image/avt.jpg</file>
+    <file>image/logo-large.png</file>
+    <file>image/avt-df.png</file>
+    <file>image/logo.png</file>
+    <file>image/auth-apppng.png</file>
+  </qresource>
+</RCC>

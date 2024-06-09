@@ -1,0 +1,1 @@
+pyuic5 -o settingUiDialog.py setting.ui

@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuthScreen</class>
+ <widget class="QDialog" name="AuthScreen">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1205</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1205</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1247</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>GapiChat</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../resources/resource.qrc">
+    <normaloff>:/image/image/logo.png</normaloff>:/image/image/logo.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font-family:Segoe UI</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="style" native="true">
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#auth_bg {
+	background-color:#f4f4f4;
+}
+#auth_form {
+	background-color:#fff;
+}
+QLineEdit {
+	background: #FFFFFF;
+	border: 1px solid #D3D7DF;
+	border-radius: 4px;
+	color : #50565f;
+	padding-left:16px
+    
+}
+QLineEdit:hover , QLineEdit:focus {
+	border-color: #065FD4;    
+}
+
+QPushButton:pressed   {
+	margin:1px
+}
+
+</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="container" native="true">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+         </font>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="auth_bg" native="true">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>40</number>
+            </property>
+            <property name="topMargin">
+             <number>30</number>
+            </property>
+            <property name="rightMargin">
+             <number>40</number>
+            </property>
+            <property name="bottomMargin">
+             <number>30</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="auth_bg_content" native="true">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <property name="spacing">
+                <number>50</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="home_btn">
+                 <property name="maximumSize">
+                  <size>
+                   <width>115</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(137, 141, 147);
+border:none</string>
+                 </property>
+                 <property name="text">
+                  <string>  Trang chủ</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../../resources/resource.qrc">
+                   <normaloff>:/icon/icon/home.png</normaloff>:/icon/icon/home.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>24</width>
+                   <height>24</height>
+                  </size>
+                 </property>
+                 <property name="autoDefault">
+                  <bool>true</bool>
+                 </property>
+                 <property name="default">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget" native="true">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="label">
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; color:#3b4350;&quot;&gt;Gapi giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn..&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#898d93;&quot;&gt;Tham gia Gapi ngay bằng cách đăng nhập hoặc đăng kí.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_2" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>335</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                  </font>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <widget class="QLabel" name="label_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>475</width>
+                      <height>335</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>445</width>
+                      <height>335</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-image: url(:/image/image/auth-apppng.png);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="auth_form" native="true">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::DefaultContextMenu</enum>
+              </property>
+              <property name="acceptDrops">
+               <bool>false</bool>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <property name="spacing">
+                <number>25</number>
+               </property>
+               <property name="leftMargin">
+                <number>140</number>
+               </property>
+               <property name="topMargin">
+                <number>70</number>
+               </property>
+               <property name="rightMargin">
+                <number>140</number>
+               </property>
+               <property name="bottomMargin">
+                <number>40</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <property name="spacing">
+                    <number>12</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="logo_img">
+                     <property name="maximumSize">
+                      <size>
+                       <width>21</width>
+                       <height>17</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">border-image: url(:/image/image/logo.png);</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_3">
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Gapi&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#898d93;&quot;&gt;Vui lòng đăng nhập để sử dụng GapiChat.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="login_gg_btn">
+                 <property name="minimumSize">
+                  <size>
+                   <width>350</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                   <weight>62</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#login_gg_btn {
+
+
+color:#065FD4;
+
+font-weight:500;
+
+border-radius: 6px;
+
+background: #FFFFFF;
+
+border:1px solid #065FD4
+}
+
+#login_gg_btn:hover {
+	background-color :rgb(244, 244, 244)
+}</string>
+                 </property>
+                 <property name="text">
+                  <string> Log in with Google</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../../resources/resource.qrc">
+                   <normaloff>:/icon-color/icon-color/google.png</normaloff>:/icon-color/icon-color/google.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                  </font>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="Line" name="line">
+                  <property name="geometry">
+                   <rect>
+                    <x>40</x>
+                    <y>30</y>
+                    <width>271</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color :#D3D7DF;</string>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_7">
+                  <property name="geometry">
+                   <rect>
+                    <x>80</x>
+                    <y>30</y>
+                    <width>191</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#e74425;&quot;&gt;LOG IN FOR EXTERNAL USER&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#50565f;&quot;&gt;Username or Email&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="email_input">
+                   <property name="minimumSize">
+                    <size>
+                     <width>350</width>
+                     <height>45</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>13</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Normal</enum>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Enter your username or email</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#50565f;&quot;&gt;Password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLineEdit" name="pw_input">
+                     <property name="minimumSize">
+                      <size>
+                       <width>350</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">padding-right:45px</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="echoMode">
+                      <enum>QLineEdit::Password</enum>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Enter your password</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="show_hide_pw">
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="toolTip">
+                      <string>Xem mật khẩu</string>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+border-image: url(:/icon/icon/eye.png);
+width:24px;
+height:24px;
+margin-right:16px;</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="login_btn">
+                 <property name="minimumSize">
+                  <size>
+                   <width>350</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                   <weight>62</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#login_btn {
+	
+	color:#FFF;
+	font-weight:500;
+	border-radius: 6px;
+	background: #e74725;
+}
+
+#login_btn:hover {
+
+	background: rgb(212, 63, 34);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Log in </string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../../resources/resource.qrc">
+                   <normaloff>:/icon/icon/arrow-right.png</normaloff>:/icon/icon/arrow-right.png</iconset>
+                 </property>
+                 <property name="shortcut">
+                  <string>Ctrl+S</string>
+                 </property>
+                 <property name="autoRepeat">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#898d93;&quot;&gt;I have not account ? &lt;/span&gt;&lt;a href=&quot;http://192.168.0.16:8080/signup&quot; style=&quot; font-size:12pt;text-decoration:none; font-weight:600; color:#065fd4;&quot;&gt;Sign up now&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#065fd4;&quot;&gt;.&lt;/a&gt;&lt;/p&gt;</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../resources/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
